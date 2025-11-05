@@ -2,8 +2,7 @@ const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
   e2e: {
-    setupNodeEvents(on, config) {
-      // implement node event listeners here
-    },
+    baseUrl: "https://lojaebac.ebaconline.art.br",
+    chromeWebSecurity: false,
   },
 });
